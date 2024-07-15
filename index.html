@@ -16,7 +16,7 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <a href=""><span>JF</span>.</a>
+                    <a href="index.html"><span>JF</span>.</a>
                 </div>
                 <div class="list-darkmode-menu">
                     <ul>
@@ -49,13 +49,13 @@
                     <h1>Jorge Fernández</h1>
                     <h4>Y yo soy <span class="multiple"></span></h4>
                     <div class="social">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a target="_blank" href="https://github.com/jockoki"><i class="fa-brands fa-github"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a> -->
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
                     <div class="btn">
-                        <button>Descargar CV</button>
+                        <button id="btnCV">Descargar CV</button>
                     </div>
                 </div>
                 <div class="right">
@@ -190,11 +190,14 @@
 
             <div class="portfolio-wrapper">
                 <div class="portfolio-box">
-                    <img src="img/web.png" alt="">
+                    <img src="img/pokedev.png" alt="">
                     <div class="portfolio-info">
-                        <h4>Back-end</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h4>Pokédev | Back-end</h4>
+                        <p>Aplicación interactiva que muestra información detallada sobre diferentes Pokémon utilizando datos de una API.</p>
+                        <div class="links">
+                            <a target="_blank" href="https://jockoki.github.io/pokedev/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a target="_blank" href="https://github.com/jockoki/pokedev.git"><i class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-box">
@@ -219,19 +222,18 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Mi <span>Contácto</span>
-            </h2>
-            <form action="">
+            <h2>Mi <span>Contácto</span></h2>
+            <form id="contactForm" onsubmit="enviarFormulario(event)">
                 <div class="input-box">
-                    <input type="text" placeholder="Nombre completo">
-                    <input type="email" placeholder="Correo electrónico">
+                    <input type="text" id="fullName" name="fullName" placeholder="Nombre completo" required>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Teléfono">
-                    <input type="text" placeholder="Asunto">
+                    <input type="tel" id="phone" name="phone" placeholder="Teléfono">
+                    <input type="text" id="subject" name="subject" placeholder="Asunto">
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <button type="submit">Enviar</button>
+                <textarea id="message" name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                <input type="submit" id="button" value="Enviar Mensaje" >
             </form>
         </div>
     </section>
@@ -254,6 +256,13 @@
 </body>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('dMAfEsqbz8AlmwWEm')
+    </script>
+
     <script src="js/app.js"></script>
 
 </html>

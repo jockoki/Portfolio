@@ -44,6 +44,23 @@ const typed = new Typed('.multiple', {
     loop: true
 });
 
+// Download CV
+document.getElementById('btnCV').addEventListener('click', function() {
+    var cvUrl = 'assets/CV-JF.pdf';
+    
+    // Crear un enlace temporal
+    var link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'CV - Jorge Fernandez.pdf';
+    
+    // Agregar el enlace al DOM y simular clic
+    document.body.appendChild(link);
+    link.click();
+    
+    // Limpiar después de la descarga
+    document.body.removeChild(link);
+});
+
 // Header shadow on scroll
 
 const header = document.querySelector('header');
@@ -79,5 +96,24 @@ navLinks.forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
         navList.classList.remove('active');
+    });
+});
+
+// Sen email
+const send = document.getElementById('button');
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    send.value = 'Enviando...';
+    
+    const serviceID = 'default_service';
+    const templateID = 'template_zmoaa78';
+    
+    emailjs.sendForm(serviceID, templateID, this).then(() => {
+        send.value = 'Enviar Mensaje';
+        alert('¡Mensaje enviado con éxito!');
+    }, (err) => {
+        send.value = 'Enviar Mensaje';
+        alert(JSON.stringify(err));
     });
 });

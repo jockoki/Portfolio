@@ -671,10 +671,19 @@ header{
                     height: 2.5em;
                     background: var(--bg-light-color);
                     @include border-radius(50%);
+                    @include transition(.3s, ease);
 
                     i{
                         font-style: 1em;
                         color: var(--second);
+                    }
+
+                    &:hover{
+                        background-color: var(--bg-color);
+                    }
+
+                    &:hover i{
+                        color: var(--first);
                     }
                 }
             }
@@ -737,13 +746,13 @@ header{
             }
         }
 
-        button{
+        #button{
             font-size: 15px;
             font-weight: 600;
             padding: 12px 24px;
             margin-top: 1em;
             @include border-radius(25px);
-            color: var(--bg-light-color);
+            color: var(--bg-color);
             background: var(--color);
             border: 2px solid var(--color);
             cursor: pointer;

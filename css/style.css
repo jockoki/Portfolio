@@ -551,10 +551,19 @@ header {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
-        -o-border-radius: 50%; }
+        -o-border-radius: 50%;
+        transition: 0.3s ease;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -ms-transition: 0.3s ease;
+        -o-transition: 0.3s ease; }
         .portfolio .portfolio-wrapper .portfolio-box .portfolio-info a i {
           font-style: 1em;
           color: var(--second); }
+        .portfolio .portfolio-wrapper .portfolio-box .portfolio-info a:hover {
+          background-color: var(--bg-color); }
+        .portfolio .portfolio-wrapper .portfolio-box .portfolio-info a:hover i {
+          color: var(--first); }
     .portfolio .portfolio-wrapper .portfolio-box:hover .portfolio-info {
       transform:  translateY(0);
       -webkit-transform:  translateY(0);
@@ -605,7 +614,7 @@ header {
     margin: 8px 0; }
     .contact form textarea::placeholder {
       color: var(--place-clr); }
-  .contact form button, .contact form .home .home-info .left .btn, .home .home-info .left .contact form .btn, .contact form .about .about-wrapper .about-right .about-info .btn, .about .about-wrapper .about-right .about-info .contact form .btn {
+  .contact form #button {
     font-size: 15px;
     font-weight: 600;
     padding: 12px 24px;
@@ -615,7 +624,7 @@ header {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    color: var(--bg-light-color);
+    color: var(--bg-color);
     background: var(--color);
     border: 2px solid var(--color);
     cursor: pointer;
@@ -624,7 +633,7 @@ header {
     -moz-transition: 0.3s ease-in;
     -ms-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in; }
-    .contact form button:hover, .contact form .home .home-info .left .btn:hover, .home .home-info .left .contact form .btn:hover, .contact form .about .about-wrapper .about-right .about-info .btn:hover, .about .about-wrapper .about-right .about-info .contact form .btn:hover {
+    .contact form #button:hover {
       color: var(--color);
       background: transparent;
       transform:  translateY(-7px);
