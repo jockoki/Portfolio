@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web - Jorge Fernández</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href=""><span>JF</span>.</a>
+                </div>
+                <div class="list-darkmode-menu">
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Sobre Mí</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#portfolio">Portafolio</a></li>
+                        <li><a href="#contact">Contáctame</a></li>
+                    </ul>
+                    <label class="mode">
+                        <input type="checkbox" checked="checked" id="darkModeButton">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </label>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-info">
+                <div class="left">
+                    <h3>Hola, Yo soy</h3>
+                    <h1>Jorge Fernández</h1>
+                    <h4>Y yo soy <span class="multiple"></span></h4>
+                    <div class="social">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="btn">
+                        <button>Descargar CV</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="profile"><img src="img/profile.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-left">
+                    <div class="about-img"><img src="img/profile2.png" alt=""></div>
+                </div>
+                <div class="about-right">
+                    <div class="about-info">
+                        <h2>Sobre <span>mí</span></h2>
+                        <h3>Desarrollador Fullstack</h3>
+                        <p>
+                            Hola, soy Jorge Fernández, un desarrollador fullstack con más de cinco años de experiencia en la creación de aplicaciones web robustas y dinámicas. Me apasiona transformar conceptos de diseño en experiencias web interactivas y fluidas, utilizando tecnologías como JavaScript, React, Node.js, PHP, MySQL, HTML5 y CSS3.
+                        </p>
+                        <div class="btn">
+                            <a href="#skills">Saber más</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Mis <span>skills</span></h2>
+            
+            <div class="skills-box">
+                <div>
+                    <div class="skill">
+                        <div class="subject">HTML5</div>
+                        <div class="progress-bar" value="97%">
+                            <div class="progress-line" style="max-width: 97%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">CSS3</div>
+                        <div class="progress-bar" value="93%">
+                            <div class="progress-line" style="max-width: 93%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">JavaScript</div>
+                        <div class="progress-bar" value="87%">
+                            <div class="progress-line" style="max-width: 87%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">PHP</div>
+                        <div class="progress-bar" value="83%">
+                            <div class="progress-line" style="max-width: 83%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill">
+                        <div class="subject">MySQL</div>
+                        <div class="progress-bar" value="85%">
+                            <div class="progress-line" style="max-width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">MERN</div>
+                        <div class="progress-bar" value="76%">
+                            <div class="progress-line" style="max-width: 76%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">Photoshop</div>
+                        <div class="progress-bar" value="80%">
+                            <div class="progress-line" style="max-width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">Diseño Responsivo</div>
+                        <div class="progress-bar" value="84%">
+                            <div class="progress-line" style="max-width: 84%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Mis <span>Servicios</span></h2>
+            <div class="services-box">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3>Diseño Web</h3>
+                    <p>
+                        Creación de interfaces atractivas y funcionales, enfocadas en la experiencia del usuario. Utilizo HTML5, CSS3 y frameworks modernos para asegurar que tu sitio web sea visualmente atractivo y fácil de usar en todos los dispositivos.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>
+                        Desarrollo de sitios y aplicaciones web completos, tanto en el front-end como en el back-end. Utilizo tecnologías como HTML, CSS, JavaScript, React, Node.js, PHP, MongoDB y MySQL para crear soluciones robustas y escalables.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3>Mantenimiento Web</h3>
+                    <p>
+                        Provisión de mantenimiento continuo y actualizaciones para sitios web y aplicaciones. Esto incluye la solución de problemas, la optimización del rendimiento y la implementación de nuevas características para mantener tu sitio actualizado y eficiente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Últimos <span>Proyectos</span></h2>
+
+            <div class="portfolio-wrapper">
+                <div class="portfolio-box">
+                    <img src="img/web.png" alt="">
+                    <div class="portfolio-info">
+                        <h4>Back-end</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="img/web.png" alt="">
+                    <div class="portfolio-info">
+                        <h4>Back-end</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="img/web.png" alt="">
+                    <div class="portfolio-info">
+                        <h4>Back-end</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Mi <span>Contácto</span>
+            </h2>
+            <form action="">
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="email" placeholder="Correo electrónico">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Teléfono">
+                    <input type="text" placeholder="Asunto">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-info">
+                    <p>&copy 2024 Jorge Fernández | Todos los derechos reservados.</p>
+                </div>
+                <div class="iconTop">
+                    <a href="#home">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+
+</html>
