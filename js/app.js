@@ -112,6 +112,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     emailjs.sendForm(serviceID, templateID, this).then(() => {
         send.value = 'Enviar Mensaje';
         alert('¡Mensaje enviado con éxito!');
+        location.reload();
     }, (err) => {
         send.value = 'Enviar Mensaje';
         alert(JSON.stringify(err));
